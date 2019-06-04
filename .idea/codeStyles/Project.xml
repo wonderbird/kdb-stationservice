@@ -31,6 +31,9 @@
       <option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
       <option name="JD_ADD_BLANK_AFTER_DESCRIPTION" value="false" />
     </JavaCodeStyleSettings>
+    <MarkdownNavigatorCodeStyleSettings>
+      <option name="RIGHT_MARGIN" value="72" />
+    </MarkdownNavigatorCodeStyleSettings>
     <XML>
       <option name="XML_KEEP_BLANK_LINES" value="1" />
       <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
@@ -557,7 +560,6 @@
     <codeStyleSettings language="Python">
       <option name="KEEP_LINE_BREAKS" value="false" />
       <option name="BLANK_LINES_AROUND_CLASS" value="0" />
-      <option name="PARENT_SETTINGS_INSTALLED" value="true" />
     </codeStyleSettings>
     <codeStyleSettings language="SQL">
       <indentOptions>
