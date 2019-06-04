@@ -13,6 +13,14 @@
    <name>QA-Tests</name>
    <description>Integration tests for the template project.</description>
 
+   <dependencies>
+      <dependency>
+         <groupId>systems.boos.examples</groupId>
+         <artifactId>core</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+   </dependencies>
+
    <build>
       <plugins>
          <plugin>
