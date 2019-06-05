@@ -7,11 +7,28 @@
       <artifactId>microservice-template</artifactId>
       <version>0.0.1-SNAPSHOT</version>
    </parent>
-
    <artifactId>qa-tests</artifactId>
+
    <version>0.0.1-SNAPSHOT</version>
    <name>QA-Tests</name>
    <description>Integration tests for the template project.</description>
+
+   <dependencies>
+      <dependency>
+         <groupId>systems.boos.examples</groupId>
+         <artifactId>core</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>systems.boos.examples</groupId>
+         <artifactId>core</artifactId>
+         <version>0.0.1-SNAPSHOT</version>
+         <classifier>tests</classifier>
+         <type>test-jar</type>
+         <scope>test</scope>
+      </dependency>
+   </dependencies>
 
    <build>
       <plugins>
