@@ -7,8 +7,8 @@
       <artifactId>microservice-template</artifactId>
       <version>0.0.1-SNAPSHOT</version>
    </parent>
-   <artifactId>qa-tests</artifactId>
 
+   <artifactId>qa-tests</artifactId>
    <version>0.0.1-SNAPSHOT</version>
    <name>QA-Tests</name>
    <description>Integration tests for the template project.</description>
