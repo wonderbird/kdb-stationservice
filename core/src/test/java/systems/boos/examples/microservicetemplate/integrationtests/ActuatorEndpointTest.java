@@ -1,4 +1,4 @@
-package systems.boos.examples.microservicetemplate.acceptancetest;
+package systems.boos.examples.microservicetemplate.integrationtests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,20 +21,21 @@ import static org.junit.Assert.assertEquals;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, classes = Application.class)
 public class ActuatorEndpointTest
 {
+   @SuppressWarnings({"InstanceVariableMayNotBeInitialized", "unused"})
    @LocalServerPort
    private int port;
 
    @Autowired
-   TestRestTemplate restTemplate = new TestRestTemplate();
+   private TestRestTemplate restTemplate = new TestRestTemplate();
 
-   HttpHeaders headers = new HttpHeaders();
+   private HttpHeaders headers = new HttpHeaders();
 
    @Test
    public void test()
    {
-      HttpEntity<String> entity = new HttpEntity<>(null, headers);
+      final HttpEntity<String> entity = new HttpEntity<>(null, headers);
 
-      ResponseEntity<String> response =
+      final ResponseEntity<String> response =
          restTemplate.exchange(createUrlWithPort("/actuator"), HttpMethod.GET, entity, String.class);
 
       assertEquals("wrong status code", HttpStatus.OK, response.getStatusCode());

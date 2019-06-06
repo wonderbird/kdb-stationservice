@@ -16,6 +16,14 @@
 
    <packaging>pom</packaging>
 
+   <modules>
+      <module>core</module>
+   </modules>
+
+   <properties>
+      <java.version>11</java.version>
+   </properties>
+
    <dependencies>
       <dependency>
          <groupId>org.springframework.boot</groupId>
@@ -69,13 +77,4 @@
          </plugin>
       </plugins>
    </build>
-
-   <properties>
-      <java.version>11</java.version>
-   </properties>
-
-   <modules>
-      <module>core</module>
-      <module>qa-tests</module>
-   </modules>
 </project>
