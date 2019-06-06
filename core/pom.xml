@@ -5,11 +5,12 @@
    <parent>
       <groupId>systems.boos.examples</groupId>
       <artifactId>microservice-template</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <!--suppress MavenPropertyInParent -->
+      <version>0.0.1.${revision}</version>
    </parent>
 
    <artifactId>core</artifactId>
-   <version>0.0.1-SNAPSHOT</version>
+   <version>0.0.1.${revision}</version>
    <name>Core</name>
    <description>This module contains the source code of the template project.</description>
 

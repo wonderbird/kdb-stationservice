@@ -10,7 +10,8 @@
    </parent>
    <groupId>systems.boos.examples</groupId>
    <artifactId>microservice-template</artifactId>
-   <version>0.0.1-SNAPSHOT</version>
+   <!-- https://blog.soebes.de/blog/2017/04/02/maven-pom-files-without-a-version-in-it/ -->
+   <version>0.0.1.${revision}</version>
    <name>Microservice Template</name>
    <description>Template project from which new microservices are generated.</description>
 
@@ -22,6 +23,7 @@
 
    <properties>
       <java.version>11</java.version>
+      <revision>0-SNAPSHOT</revision>
    </properties>
 
    <dependencies>
