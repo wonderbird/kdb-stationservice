@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Entry point of the Spring Boot MVC application.
  */
 @SpringBootApplication
-public class TheApplication
+public class Application
 {
 
    /**
@@ -16,7 +16,7 @@ public class TheApplication
     */
    public static void main(final String[] args)
    {
-      SpringApplication.run(TheApplication.class, args);
+      SpringApplication.run(Application.class, args);
    }
 
 }

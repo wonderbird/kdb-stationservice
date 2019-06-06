@@ -14,7 +14,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="core" options="-parameters" />
-      <module name="microservice-template" options="-parameters" />
+      <module name="microservice-template" options="" />
       <module name="qa-tests" options="-parameters" />
     </option>
   </component>

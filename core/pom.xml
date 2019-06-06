@@ -41,7 +41,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <configuration>
-               <mainClass>systems.boos.examples.microservicetemplate.TheApplication</mainClass>
+               <mainClass>systems.boos.examples.microservicetemplate.Application</mainClass>
             </configuration>
             <executions>
                <execution>
