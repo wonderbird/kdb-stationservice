@@ -1,4 +1,4 @@
-package systems.boos.examples.microservicetemplate;
+package systems.boos.examples.microservicetemplate.unittests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
