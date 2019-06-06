@@ -19,7 +19,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, classes = Application.class)
-public class ActuatorEndpointTest
+public class SwaggerUiTest
 {
    @SuppressWarnings({"InstanceVariableMayNotBeInitialized", "unused"})
    @LocalServerPort
@@ -36,7 +36,7 @@ public class ActuatorEndpointTest
       final HttpEntity<String> entity = new HttpEntity<>(null, headers);
 
       final ResponseEntity<String> response =
-         restTemplate.exchange(createUrlWithPort("/actuator"), HttpMethod.GET, entity, String.class);
+         restTemplate.exchange(createUrlWithPort("/swagger-ui.html"), HttpMethod.GET, entity, String.class);
 
       assertEquals("wrong status code", HttpStatus.OK, response.getStatusCode());
    }
@@ -45,4 +45,5 @@ public class ActuatorEndpointTest
    {
       return "http://localhost:" + port + aUri;
    }
+
 }

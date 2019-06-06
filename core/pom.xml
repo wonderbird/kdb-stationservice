@@ -15,6 +15,19 @@
    <description>This module contains the source code of the template project.</description>
 
    <dependencies>
+      <!-- OpenAPI / Swagger -->
+      <!-- see also: https://techsparx.com/software-development/openapi/spring-boot-rest-api-docs.html -->
+      <dependency>
+         <groupId>io.springfox</groupId>
+         <artifactId>springfox-swagger2</artifactId>
+         <version>2.9.2</version>
+      </dependency>
+      <dependency>
+         <groupId>io.springfox</groupId>
+         <artifactId>springfox-swagger-ui</artifactId>
+         <version>2.9.2</version>
+      </dependency>
+
       <dependency>
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-web</artifactId>
