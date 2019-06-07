@@ -17,6 +17,7 @@
    <dependencies>
       <!-- OpenAPI / Swagger -->
       <!-- see also: https://techsparx.com/software-development/openapi/spring-boot-rest-api-docs.html -->
+      <!-- and: https://springfox.github.io/springfox/docs/current/ -->
       <dependency>
          <groupId>io.springfox</groupId>
          <artifactId>springfox-swagger2</artifactId>
