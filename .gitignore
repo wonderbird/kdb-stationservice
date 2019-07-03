@@ -1,5 +1,6 @@
 HELP.md
 /target/
+/core/target/
 !.mvn/wrapper/maven-wrapper.jar
 *~
 *.bak
