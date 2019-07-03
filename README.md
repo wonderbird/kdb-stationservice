@@ -1,5 +1,17 @@
 # Overview
 
+## Usage
+
+In order to derive a new project from this template, execute the bash script
+
+```shell
+cd /path/to/projects
+microservice-template/create-project-from-template.sh My-Fancy-Project
+```
+
+Replace "My-Fancy-Project" with your desired project name. Use "-" symbols instead
+of spaces.
+
 ## Developer Information
 
 The microservice-template is built into a Docker image by means of the 
