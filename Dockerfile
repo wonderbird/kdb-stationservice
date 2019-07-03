@@ -16,6 +16,6 @@ RUN mvn -pl core package -DskipTests=true
 FROM adoptopenjdk/openjdk11:alpine
 VOLUME /tmp
 RUN mkdir /opt/app
-COPY --from=build-stage /app/core/target/microservice-template-exec.jar /opt/app/app.jar
+COPY --from=build-stage /app/core/target/kdb-stationservice-exec.jar /opt/app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-Xms32m","-Xmx256m","-Djava.security.egd=file:/dev/./urandom","-jar","/opt/app/app.jar"]

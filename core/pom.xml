@@ -4,7 +4,7 @@
    <modelVersion>4.0.0</modelVersion>
    <parent>
       <groupId>systems.boos.examples</groupId>
-      <artifactId>microservice-template</artifactId>
+      <artifactId>kdb-stationservice</artifactId>
       <!--suppress MavenPropertyInParent -->
       <version>0.0.1.${revision}</version>
    </parent>
@@ -51,7 +51,7 @@
    </dependencies>
 
    <build>
-      <finalName>microservice-template</finalName>
+      <finalName>kdb-stationservice</finalName>
       <plugins>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>

@@ -50,28 +50,28 @@ function renameGitRemoteOriginToTemplate() {
 }
 
 function renameFilesAndContentsToProjectName() {
-    # Rename all instances of "Microservice-Template" to the new project name
-    echo "  3/6 Asking the user to rename the project contents from Microservice-Template to $PROJECT_CAMEL_CASE ..."
+    # Rename all instances of "Kdb-StationService" to the new project name
+    echo "  3/6 Asking the user to rename the project contents from Kdb-StationService to $PROJECT_CAMEL_CASE ..."
     "/Applications/Rename Project.app/Contents/MacOS/JavaAppLauncher"
 }
 
 function revertRenamingUpstreamUrls() {
     # The rename method above will rename the upstream url as well. Correct this.
     echo "  4/6 Reverting rename of the remote tracking branch ..."
-    git remote set-url template /Volumes/SBOOS/MyCloud/git/microservice-template.git
+    git remote set-url template /Volumes/SBOOS/MyCloud/git/kdb-stationservice.git
 }
 
 function correctTrackingBranches() {
     # Setup tracking the template master branch in a branch different from master
-    echo "  5/6 Renaming master to microservice-template-master and creating new master"
-    git branch --move master microservice-template-master
+    echo "  5/6 Renaming master to kdb-stationservice-master and creating new master"
+    git branch --move master kdb-stationservice-master
     git branch master
     git checkout master
 }
 
 function commitChangesToNewGitRepository() {
     echo "  6/6 Committing changes ..."
-    git commit -a -m "chore (init setup): use RenameProject to rename from microservice-template to $PROJECT_LOWER_CASE (automatic commit by create-project-from-template.sh)"
+    git commit -a -m "chore (init setup): use RenameProject to rename from kdb-stationservice to $PROJECT_LOWER_CASE (automatic commit by create-project-from-template.sh)"
 }
 
 function fixUpstreamUrlAndCreateNewMasterBranch() {

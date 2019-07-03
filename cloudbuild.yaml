@@ -1,5 +1,5 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/microservice-template', '.' ]
+    args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/kdb-stationservice', '.' ]
 images:
-  - 'eu.gcr.io/$PROJECT_ID/microservice-template'
+  - 'eu.gcr.io/$PROJECT_ID/kdb-stationservice'

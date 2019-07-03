@@ -9,10 +9,10 @@
       <relativePath/> <!-- lookup parent from repository -->
    </parent>
    <groupId>systems.boos.examples</groupId>
-   <artifactId>microservice-template</artifactId>
+   <artifactId>kdb-stationservice</artifactId>
    <!-- https://blog.soebes.de/blog/2017/04/02/maven-pom-files-without-a-version-in-it/ -->
    <version>0.0.1.${revision}</version>
-   <name>Microservice Template</name>
+   <name>Kdb Station Service</name>
    <description>Template project from which new microservices are generated.</description>
 
    <packaging>pom</packaging>

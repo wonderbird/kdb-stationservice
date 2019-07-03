@@ -26,7 +26,7 @@ public class SwaggerConfig {
 
    private ApiInfo apiInfo() {
       ApiInfo apiInfo = new ApiInfo(
-         "Microservice Template",
+         "Kdb Station Service",
          "Template project from which new microservices are generated.",
          "0.0.1",
          "https://wonderbird.github.io",
