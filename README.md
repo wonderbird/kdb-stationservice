@@ -12,6 +12,12 @@ microservice-template/create-project-from-template.sh My-Fancy-Project
 Replace "My-Fancy-Project" with your desired project name. Use "-" symbols instead
 of spaces.
 
+The script will clone this microservice-template, rename all files, directories and
+file contents to "My-Fancy-Project" (considering case) and initialize a git repository.
+While doing so it will establish a branch named microservice-template-master and
+link it to the source repository. The source repository will have the git remote name
+"template".
+
 After the script has finished, you can [publish your new project on GitHub](https://github.com).
 When creating the project, you can activate the [Google Cloud Build](https://cloud.google.com/cloud-build/)
 checkbox (see below for details). As instructed by GitHub, push your fresh project:
