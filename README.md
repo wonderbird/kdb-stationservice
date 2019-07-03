@@ -28,7 +28,7 @@ git remote add origin git@github.com:<userid>/<repository>
 git push -u origin master
 ```
 
-Now this will trigger a [Google Cloud Build](console.cloud.google.com/cloud-build/builds) already.
+Now this will trigger a [Google Cloud Build (Console)](https://console.cloud.google.com/cloud-build/builds) already.
 The build should be successful.
 
 If you have connected [Travis-CI.org](https://travis-ci.org) to GitHub, then you can enable the
